@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  function gradingStudents(grades) {
+      //    for (let i = 0; i < grades.length; i++) {
+      //      if ((grades[i] >= 38) && ((((grades[i] % 5) == 3) || ((grades[i] %
+      //        grades[i] = grades[i] + (5 - (grades[i] % 5));
+      //      }
+      //    }
+      //    return grades;
+      //  }
+
+      //   for (let i = 0; i < grades.length; i++) {
+      //    if ((grades[i] >= 38) && ((((grades[i] % 5) == 3) || ((grades[i] %
+      //    grades[i] = grades[i] + (5 - (grades[i] % 5));
+      //    -
+      //    }
+      //    }
+      //    return grades;
+      //    }
+
+      const result = grades.map((value) => {
+        if (value < 38) {
+          return value;
+        } else if (value % 5 < 3) {
+          return value;
+        } else {
+          let extraMarks = 5 - (value % 5);
+          return value + extraMarks;
+        }
+      });
+      return result;
+    </script>
+  </body>
+</html>
